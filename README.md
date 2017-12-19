@@ -1,6 +1,6 @@
-##PRACTICA 1 - HTML
+## PRACTICA 1 - HTML
 
-#CREACION DE RAMAS
+# CREACION DE RAMAS
 
 Creamos una rama:
 

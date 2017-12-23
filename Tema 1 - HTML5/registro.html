@@ -1,13 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="es-ES">
 <head>
-	<meta charset="UTF-8">
-	<title>The Rick and Morty Blog</title>
-	<meta name="description" content="Registro">
-	<meta name="author" content="Francisco José Aguilar, Juan Manuel Bécares">
-	<img src="" alt="imagen de cabecera, Rick y Morty">
+	<style type="text/css" media="screen">
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: white;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: white;
+		}
+	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Rick and Morty Blog</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Francisco José Aguilar, Juan Manuel Bécares">
+  <img src="./images/logo_rick_and_morty.png" alt="imagen de cabecera, Rick y Morty">
 </head>
+
 <body>
-	
+	<header id="header" class="">
+		<h1>The Rick and Morty Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="#" title="Mi perfil">Mi perfil</a></li>	
+				<li><a href="#" title="Añadir articulo">Añadir articulo</a></li>
+				<li><a href="#" title="Añadir imagen">Añadir imagen</a></li>
+				<li><a href="#" title="Juegos">Juegos</a></li>
+				<li><a href="#" title="Chat">Chat</a></li>
+				<li><a href="#" title="Contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<header id="header" class="">
+			<h1>Mi perfil</h1>
+		</header>
+		<div>
+			<form action="perfil" action="#" method="post" accept-charset="utf-8">
+				<label for="firstname">Nombre:</label>
+				<input type="text" id="firstname" name="firstname" minlength="10" maxlength="150" required>
+				<label for="lastname">Apellidos:</label>
+				<input type="text" id="lastname" name="lastname" minlength="10" maxlength="150" value="" placeholder="" required>
+				<br>
+				<label for="telephone">Telefono:</label>
+				<input type="tel" id="telephone" name="telephone" minlength="9" maxlength="9" value="" placeholder="" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" value="" placeholder="" required>
+				<br>
+				<label for="birthday">Fecha de nacimiento:</label>
+				<input type="date" id="birthday" name="birthday" value="" placeholder="" min="01-01-1900" max="01-01-2018" required pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}">
+				<label for="height">Altura:</label>
+				<input type="number" id="height" name="height" value="" placeholder="" min="1" max="3">
+				<br>
+				<label for="favcolor">Color preferido:</label>
+				<input type="color" id="favcolor" name="favcolor" value="" placeholder="">
+				<label for="favweb">Web favorita</label>
+				<input type="url" id="favweb" name="favweb" value="" placeholder="" required pattern="https?://.+">
+
+			</form>
+		</div>
+		<div>
+			<input type="submit" name="Save" value="Save">
+			<input type="submit" name="Cancel" value="Cancel">
+
+		</div>
+	</main>
+	<footer>
+		
+		<ul>
+			<li><a href="#" title="Inicio">Inicio</a></li>
+			<li><a href="#" title="Ayuda">Ayuda</a></li>
+			<li><a href="#" title="Contacto">Contacto</a></li>
+		</ul>
+	</footer>
+
 </body>
 </html>

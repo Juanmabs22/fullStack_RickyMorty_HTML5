@@ -1,0 +1,15 @@
+{
+    // Utilizar IntelliSense para aprender acerca de los posibles atributos.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos 
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///D:/OneDrive/Apuntes/fullStack/2%20-%20HTML5%20y%20CSS/develop/fullStack_RickyMorty_HTML5/Tema%202%20-%20CSS/1%20-%20Layout/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

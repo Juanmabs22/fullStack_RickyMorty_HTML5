@@ -1,3 +1,49 @@
+/* Utilizar éste CSS para parámetros gloables de toda la aplicación */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER - CABECERA */
+/* .header{} */
+.header-superior{
+    max-width: 730px;
+    margin: 0 auto;
+}
+.header-superior__image{
+    height: 2em;
+    margin: 0.3em 0;
+}
+.header-superior__title{
+    display: none;
+}
+
+.header-nav {
+    background: rgb(238, 238, 238);
+    border-style: solid none;
+    border-color: grey;
+}
+.header-nav__center { 
+    width: 730px;
+    margin: 0 auto;
+    border-style: none solid;
+    border-color: grey;
+}
+.header-nav__link {
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+    border-right: solid grey;
+}
+
+
+
+
+/* TODO: Dejar de usar este estilo para usar BEM (aunque BEM sea una mierda) */
 ul {
     list-style-type: none;
     margin: 0;

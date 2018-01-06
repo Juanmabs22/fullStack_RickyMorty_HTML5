@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.enlace_articulo {
+    text-align: left;
+    padding: 0;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+article {
+    max-width: 380px;
+    padding: 10px;
+}
+
+article header img {
+    max-width: 100%;
+    height: auto;
+}

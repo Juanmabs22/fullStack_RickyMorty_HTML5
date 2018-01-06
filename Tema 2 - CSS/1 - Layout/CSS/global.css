@@ -9,7 +9,7 @@ html, body{
 /* HEADER - CABECERA */
 /* .header{} */
 .header-superior{
-    max-width: 730px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .header-superior__image{
@@ -26,7 +26,7 @@ html, body{
     border-color: #cecece;
 }
 .header-nav__center { 
-    max-width: 730px;
+    max-width: 1000px;
     margin: 0 auto;
     border-style: none solid;
     border-color: #cecece;
@@ -48,9 +48,15 @@ main, footer {
 }
 
 
+/* Zona del contenio - MAIN */
+.main_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Pié de página - FOOTER */
 .footer-nav{
-    max-width: 730px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .footer-nav__link {
@@ -69,7 +75,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: white;
+    /* background: white; */
 }
 
 li {
@@ -93,12 +99,3 @@ li a:hover {
     background-color: white;
 }
 
-article {
-    max-width: 380px;
-    padding: 10px;
-}
-
-article header img {
-    max-width: 100%;
-    height: auto;
-}

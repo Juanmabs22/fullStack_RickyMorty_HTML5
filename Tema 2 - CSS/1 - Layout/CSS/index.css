@@ -1,0 +1,16 @@
+.main-articulos {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+}
+.main-articulos__articulo{
+    margin: 0.5em;
+    flex-grow: 1;
+    /* max-width: 400px; */
+    width: 300px;
+}
+
+article header img {
+    max-width: 100%;
+    height: auto;
+}

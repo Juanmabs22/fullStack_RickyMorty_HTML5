@@ -1,14 +1,39 @@
+
+/* Blque principal, distribución de los bloques/tarjetas */
 .main-articulos {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     /* flex-direction: row; */
 }
 .main-articulos__articulo{
     margin: 0.5em;
     flex-grow: 1;
-    /* max-width: 400px; */
     width: 300px;
+    box-shadow: 0 0 0.7em 0 rgba(0, 0, 0, 0.4);
 }
+
+/* Bloque de cada resumen del artículo */
+
+.mini-articulo{
+    
+}
+.mini-articulo__imagen{
+    
+}
+.mini-articulo__categoria{
+    
+}
+.mini-articulo__subcategoria{
+    
+}
+.mini-articulo__fecha{
+    
+}
+.mini-articulo__titulo{
+    
+}
+
 
 article header img {
     max-width: 100%;

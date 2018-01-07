@@ -46,6 +46,15 @@
     border: 0.1em solid rgb(197, 197, 197);
 }
 
-
-grid{
+/* hack - añade el tipo de elemento para que sea más descriptivo e ignore la propiedad genérica*/
+input.perfil-formulario__button {
+    width: auto;
+    font-size: 0.9em;
 }
+.perfil-formulario__button--save{
+    background: rgb(103, 103, 189);
+    border-color: rgb(103, 103, 189) !important;
+    color: white;
+}
+
+.perfil-formulario__button--cancel

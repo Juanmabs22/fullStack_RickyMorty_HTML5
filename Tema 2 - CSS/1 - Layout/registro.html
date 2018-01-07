@@ -15,34 +15,24 @@
 </head>
 
 <body>
-	<header id="header" class="">
+	<header id="header" class="header">
+	<div class="header-superior">
 		<a href="index.html">
-		  <img src="./images/logo_rick_and_morty.png" alt="imagen de cabecera, Rick y Morty">
+			<img class="header-superior__image" src="./images/logo_rick_and_morty.png" alt="imagen de cabecera, Rick y Morty">
 		</a>
-		<h1>The Rick and Morty Blog</h1>
-		<nav>
-			<ul>
-				<li>
-					<a href="registro.html" title="Mi perfil">Mi perfil</a>
-				</li>
-				<li>
-					<a href="#" title="Añadir articulo">Añadir articulo</a>
-				</li>
-				<li>
-					<a href="#" title="Añadir imagen">Añadir imagen</a>
-				</li>
-				<li>
-					<a href="#" title="Juegos">Juegos</a>
-				</li>
-				<li>
-					<a href="#" title="Chat">Chat</a>
-				</li>
-				<li>
-					<a href="#" title="Contacto">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		<h1 class="header-superior__title">The Rick and Morty Blog</h1>
+	</div>
+	<nav class="header-nav">
+		<div class="header-nav__center">
+			<a class="header-nav__link" href="registro.html" title="Mi perfil">Mi perfil</a>
+			<a class="header-nav__link" href="article.html" title="Añadir articulo">Añadir articulo</a>
+			<a class="header-nav__link" href="#" title="Añadir imagen">Añadir imagen</a>
+			<a class="header-nav__link" href="#" title="Juegos">Juegos</a>
+			<a class="header-nav__link" href="#" title="Chat">Chat</a>
+			<a class="header-nav__link" href="#" title="Contacto">Contacto</a>
+		</div>
+	</nav>
+</header>
 	<main>
 		<header id="header" class="">
 			<h1>Mi perfil</h1>
@@ -92,14 +82,13 @@
 
 		</div>
 	</main>
-	<footer>
-		<ul>
-			<li><a href="index.html" title="Inicio">Inicio</a></li>
-			<li><a href="#" title="Ayuda">Ayuda</a></li>
-			<li><a href="#" title="Contacto">Contacto</a></li>
-		</ul>
+	<footer class="footer">
+		<nav class="footer-nav">
+			<a class="footer-nav__link" href="index.html" title="Inicio">Inicio</a>
+			<a class="footer-nav__link" href="#" title="Ayuda">Ayuda</a>
+			<a class="footer-nav__link" href="#" title="Contacto">Contacto</a>
+		</nav>
 	</footer>
 
 </body>
-
 </html>

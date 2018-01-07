@@ -9,33 +9,92 @@
 .main-articulos__articulo{
     margin: 0.5em;
     flex-grow: 1;
-    width: 300px;
+    width: 250px;
     box-shadow: 0 0 0.7em 0 rgba(0, 0, 0, 0.4);
+
+    border-bottom: 0.17em solid;
 }
 
 /* Bloque de cada resumen del artículo */
 
 .mini-articulo{
-    
+    padding: 0 1.25em;
 }
 .mini-articulo__imagen{
-    
+    margin: 0 -1.25em;
+    max-width: calc(100% + 2.5em);
+    height: auto;
 }
-.mini-articulo__categoria{
-    
+.mini-articulo__categorias{
+    margin-top: 1em;
+    font-size: 0.7em;
 }
+.mini-articulo__categorias,
+.mini-articulo__categoria,
 .mini-articulo__subcategoria{
-    
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
 }
-.mini-articulo__fecha{
-    
+.mini-articulo__fechaAutor{
+    color: grey;
 }
 .mini-articulo__titulo{
-    
+    margin: 0.3em 0 0;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+}
+.mini-articulo__contenido{
+    max-height: 2.4em; 
+    overflow: hidden;
+    display: block;
+    margin: 0 0 1em;
+
+    /* Super truco para tener siempre 2 líneas de texto (con webkit): */
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
+/* Colores */
+.articulo-color__rojo.main-articulos__articulo {
+    border-bottom-color: red;
+}
 
-article header img {
-    max-width: 100%;
-    height: auto;
+.articulo-color__rojo .mini-articulo__categorias,
+.articulo-color__rojo .mini-articulo__categoria,
+.articulo-color__rojo .mini-articulo__subcategoria {
+    color: red;
+}
+
+.articulo-color__azul.main-articulos__articulo {
+    border-bottom-color: blue;
+}
+
+.articulo-color__azul .mini-articulo__categorias,
+.articulo-color__azul .mini-articulo__categoria,
+.articulo-color__azul .mini-articulo__subcategoria {
+    color: blue;
+}
+
+.articulo-color__verde.main-articulos__articulo {
+    border-bottom-color: green;
+}
+
+.articulo-color__verde .mini-articulo__categorias,
+.articulo-color__verde .mini-articulo__categoria,
+.articulo-color__verde .mini-articulo__subcategoria {
+    color: green;
+}
+
+.articulo-color__amarillo.main-articulos__articulo {
+    border-bottom-color: yellowgreen;
+}
+
+.articulo-color__amarillo .mini-articulo__categorias,
+.articulo-color__amarillo .mini-articulo__categoria,
+.articulo-color__amarillo .mini-articulo__subcategoria {
+    color: yellowgreen;
 }

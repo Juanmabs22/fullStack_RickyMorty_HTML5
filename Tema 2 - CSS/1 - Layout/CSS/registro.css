@@ -1,0 +1,51 @@
+
+.perfil-formulario{
+    display: grid;
+    max-width: 30em;
+    margin: 1em auto;
+    grid-template-columns: 15em 15em;
+    grid-gap: 1em 3em;
+}
+.perfil-formulario__firstname{
+
+}
+.perfil-formulario__lastname{
+
+}
+.perfil-formulario__telephone{
+
+}
+.perfil-formulario__email{
+
+}
+.perfil-formulario__birthday{
+
+}
+.perfil-formulario__height{
+
+}
+.perfil-formulario__favcolor{
+
+}
+.perfil-formulario__favweb{
+
+}
+.perfil-formulario__buttons{
+
+}
+
+.perfil-formulario label{
+    display: block;
+    font-size: 0.77em;
+}
+.perfil-formulario input {
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: 0.1em solid rgb(197, 197, 197);
+}
+
+
+grid{
+}

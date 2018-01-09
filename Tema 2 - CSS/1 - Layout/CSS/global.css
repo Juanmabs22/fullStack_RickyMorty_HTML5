@@ -69,11 +69,17 @@ main, footer {
     bottom: -0.5em;
     left: 0.1em;
 }
+.main-wrapper__contenido{
+    background: white;  
+    padding: 0.5em;
+    border: 0.1em solid rgb(219, 219, 219);
+}
 
 /* Pié de página - FOOTER */
 .footer-nav{
     max-width: 1000px;
     margin: 0 auto;
+    border-top: 0.1em solid grey;
 }
 .footer-nav__link {
     text-decoration: none;

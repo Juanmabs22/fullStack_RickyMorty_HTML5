@@ -37,50 +37,52 @@
 			<header class="main-wrapper__titulo">
 				<h1>Mi perfil</h1>
 			</header>
-			<form
-					class="perfil-formulario" 
-					action="perfil" 
-					action="#" 
-					method="post" 
-					accept-charset="utf-8">
-				<div class="perfil-formulario__firstname">
-					<label for="firstname">Nombre:</label>
-					<input type="text" id="firstname" name="firstname" minlength="10" maxlength="150" required>
-				</div>
-				<div class="perfil-formulario__lastname">	
-					<label for="lastname">Apellidos:</label>
-					<input type="text" id="lastname" name="lastname" minlength="10" maxlength="150" value="" placeholder="" required>
-				</div>
+			<div class="main-wrapper__contenido">
+				<form
+						class="perfil-formulario" 
+						action="perfil" 
+						action="#" 
+						method="post" 
+						accept-charset="utf-8">
+					<div class="perfil-formulario__firstname">
+						<label for="firstname">Nombre:</label>
+						<input type="text" id="firstname" name="firstname" minlength="10" maxlength="150" required>
+					</div>
+					<div class="perfil-formulario__lastname">	
+						<label for="lastname">Apellidos:</label>
+						<input type="text" id="lastname" name="lastname" minlength="10" maxlength="150" value="" placeholder="" required>
+					</div>
 
-				<div class="perfil-formulario__telephone">
-					<label for="telephone">Telefono:</label>
-					<input type="number" id="telephone" name="telephone" minlength="9" maxlength="9" size="9" value="" placeholder="" pattern="[0-9]{9}" required>
-				</div>
-				<div class="perfil-formulario__email">
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" value="" placeholder="" required>
-				</div>
-				<div class="perfil-formulario__birthday">
-					<label for="birthday">Fecha de nacimiento:</label>
-					<input type="date" id="birthday" name="birthday" value="" placeholder="" min="1900-01-01" max="2018-01-01" required pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}">
-				</div>
-				<div class="perfil-formulario__height">
-					<label for="height">Altura:</label>
-					<input type="number" id="height" name="height" value="" placeholder="" min="1" max="3">
-				</div>
-				<div class="perfil-formulario__favcolor">
-					<label for="favcolor">Color preferido:</label>
-					<input type="color" id="favcolor" name="favcolor" value="" placeholder="">
-				</div>
-				<div class="perfil-formulario__favweb">
-					<label for="favweb">Web favorita</label>
-					<input type="url" id="favweb" name="favweb" value="" placeholder="" required pattern="https?://.+">
-				</div>
-				<div class="perfil-formulario__buttons">
-					<input class="perfil-formulario__button perfil-formulario__button--save" type="submit" name="Save" value="Save">
-					<input class="perfil-formulario__button perfil-formulario__button--cancel" type="submit" name="Cancel" value="Cancel">
-				</div>
-			</form>
+					<div class="perfil-formulario__telephone">
+						<label for="telephone">Telefono:</label>
+						<input type="number" id="telephone" name="telephone" minlength="9" maxlength="9" size="9" value="" placeholder="" pattern="[0-9]{9}" required>
+					</div>
+					<div class="perfil-formulario__email">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" value="" placeholder="" required>
+					</div>
+					<div class="perfil-formulario__birthday">
+						<label for="birthday">Fecha de nacimiento:</label>
+						<input type="date" id="birthday" name="birthday" value="" placeholder="" min="1900-01-01" max="2018-01-01" required pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}">
+					</div>
+					<div class="perfil-formulario__height">
+						<label for="height">Altura:</label>
+						<input type="number" id="height" name="height" value="" placeholder="" min="1" max="3">
+					</div>
+					<div class="perfil-formulario__favcolor">
+						<label for="favcolor">Color preferido:</label>
+						<input type="color" id="favcolor" name="favcolor" value="" placeholder="">
+					</div>
+					<div class="perfil-formulario__favweb">
+						<label for="favweb">Web favorita</label>
+						<input type="url" id="favweb" name="favweb" value="" placeholder="" required pattern="https?://.+">
+					</div>
+					<div class="perfil-formulario__buttons">
+						<input class="perfil-formulario__button perfil-formulario__button--save" type="submit" name="Save" value="Save">
+						<input class="perfil-formulario__button perfil-formulario__button--cancel" type="submit" name="Cancel" value="Cancel">
+					</div>
+				</form>
+			</div>
 		</div>
 	</main>
 	<footer class="footer">

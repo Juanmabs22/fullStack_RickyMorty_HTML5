@@ -24,6 +24,20 @@ html, body{
 .header-superior__title{
     display: none;
 }
+@media(max-width: 670px) {
+    .header-superior__link{
+        display: block;
+        text-align: center;
+        line-height: 0;
+    }
+    .header-superior__image {
+        margin: 0;
+        width: auto;
+        height: auto;
+        max-height: 103px;
+        max-width: 90%;
+    }
+}
 
 .header-nav {
     /* background: rgb(238, 238, 238); */
@@ -43,6 +57,16 @@ html, body{
     text-decoration: none;
     color: black;
     border-right: solid #cecece;
+}
+
+@media(max-width: 670px){
+    .header-nav__link {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+        border-top: solid #cecece;
+        border-left: solid #cecece;
+    }
 }
 
 /* Fondo grisaceo para el resto de la página  */
@@ -101,6 +125,21 @@ main, footer {
     padding: 1em;
     display: inline-block;
 }
+@media(max-width: 670px) {
+    .footer-nav{
+        text-align: center;
+    }
+    .footer-nav__link {
+        display: inline-block;
+        text-align: center;
+    }
+}
 
-
-
+@media(max-width: 370px) {
+    .footer-nav__link {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+        border-top: solid #cecece;
+    }
+}

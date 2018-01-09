@@ -6,6 +6,13 @@
     grid-template-columns: 15em 15em;
     grid-gap: 1em 3em;
 }
+@media(max-width: 40em) {
+    .perfil-formulario {
+        grid-template-columns: 100%;
+        max-width: 17em;
+    }
+}
+
 .perfil-formulario__firstname{
 
 }

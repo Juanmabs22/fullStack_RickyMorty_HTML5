@@ -19,6 +19,7 @@
 
 .mini-articulo{
     padding: 0 1.25em;
+    background: white;
 }
 .mini-articulo__imagen{
     margin: 0 -1.25em;
@@ -46,7 +47,7 @@
     color: black;
 }
 .mini-articulo__contenido{
-    max-height: 2.4em; 
+    max-height: 2.7em; 
     overflow: hidden;
     display: block;
     margin: 0 0 1em;

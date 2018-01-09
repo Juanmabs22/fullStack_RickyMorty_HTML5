@@ -1,13 +1,18 @@
-/* Utilizar éste CSS para parámetros gloables de toda la aplicación */
+/* Utilizar éste CSS para parámetros globales de toda la aplicación */
 
 html, body{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(216, 216, 216);
+    height: 100%;
 }
 
 /* HEADER - CABECERA */
 /* .header{} */
+.header{
+    background: white;
+}
 .header-superior{
     max-width: 1000px;
     margin: 0 auto;
@@ -42,13 +47,15 @@ html, body{
 
 /* Fondo grisaceo para el resto de la página  */
 main, footer {
-    background: rgb(238, 238, 238);
     display: inline-block;
     width: 100%;
 }
 
 
 /* Zona del contenio - MAIN */
+.main{
+    min-height: calc(100% - 11em);
+}
 .main-wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -76,6 +83,13 @@ main, footer {
 }
 
 /* Pié de página - FOOTER */
+.footer{ /* Hack para poner al fondo de la pagina el pie */
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 1.3em;
+}
 .footer-nav{
     max-width: 1000px;
     margin: 0 auto;
@@ -89,30 +103,4 @@ main, footer {
 }
 
 
-
-
-/* TODO: Dejar de usar este estilo para usar BEM (aunque BEM sea una mierda) */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* background: white; */
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: white;
-}
 

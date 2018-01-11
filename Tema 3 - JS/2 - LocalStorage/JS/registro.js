@@ -1,18 +1,19 @@
 // Comprobamos si el navegar el compatible con localStorage
 if (window.localStorage === undefined) {
-    alert("Su navegador no permite localStorage, busque otro");
-}
+    console.log("Su navegador no permite localStorage, busque otro");
+}else{
 
 // Array con los IDs de los campos/inputs que vamos a guardas y subir
-let ids = [ "firstname", "lastname", "telephone", "email", "birthday", "height", "favcolor", "favweb" ];
+ids = [ "firstname", "lastname", "telephone", "email", "birthday", "height", "favcolor", "favweb" ];
 
 // Función que guarda los datos del formulario en localStorage
 function guardar() {
-    let formularioPersona = {};
+    var formularioPersona = {};
     ids.forEach((v, i, a) =>{
         formularioPersona[ids[i]] = document.getElementById(ids[i]).value;
     });
     localStorage.formularioPersona = JSON.stringify(formularioPersona);
+    console.log("Formulario guardado en LocalStorage.");
 }
 
 // Función que carga los datos de localStorage al formulario
@@ -39,3 +40,5 @@ document.getElementById("height").oninvalid = function (e) {
         e.target.setCustomValidity("¡No aceptamos personas por debajo de un metro!");
     }
 };
+
+}

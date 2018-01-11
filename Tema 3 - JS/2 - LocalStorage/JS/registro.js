@@ -31,3 +31,11 @@ function cargar() {
 
 //Cuando cargue la página cargamos los datos.
 cargar();
+
+
+document.getElementById("height").oninvalid = function (e) {
+    e.target.setCustomValidity("");
+    if (!e.target.validity.valid) {
+        e.target.setCustomValidity("¡No aceptamos personas por debajo de un metro!");
+    }
+};

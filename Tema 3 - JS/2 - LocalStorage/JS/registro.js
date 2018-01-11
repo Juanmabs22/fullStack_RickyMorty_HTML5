@@ -4,15 +4,7 @@ if (window.localStorage === undefined) {
 }
 
 // Array con los IDs de los campos/inputs que vamos a guardas y subir
-let ids = [
-    "firstname",
-    "lastname",
-    "telephone",
-    "email",
-    "birthday",
-    "height",
-    "favcolor",
-    "favweb" ];
+let ids = [ "firstname", "lastname", "telephone", "email", "birthday", "height", "favcolor", "favweb" ];
 
 // Función que guarda los datos del formulario en localStorage
 function guardar() {

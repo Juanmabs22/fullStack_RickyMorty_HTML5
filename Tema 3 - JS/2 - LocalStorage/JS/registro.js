@@ -1,10 +1,9 @@
-
-
+// Comprobamos si el navegar el compatible con localStorage
 if (window.localStorage === undefined) {
     alert("Su navegador no permite localStorage, busque otro");
 }
 
-
+// Array con los IDs de los campos/inputs que vamos a guardas y subir
 let ids = [
     "firstname",
     "lastname",
@@ -15,6 +14,7 @@ let ids = [
     "favcolor",
     "favweb" ];
 
+// Función que guarda los datos del formulario en localStorage
 function guardar() {
     let formularioPersona = {};
     ids.forEach((v, i, a) =>{
@@ -23,6 +23,7 @@ function guardar() {
     localStorage.formularioPersona = JSON.stringify(formularioPersona);
 }
 
+// Función que carga los datos de localStorage al formulario
 function cargar() {
     let formularioPersona = JSON.parse(localStorage.formularioPersona || null);
     if(!formularioPersona){
@@ -36,4 +37,5 @@ function cargar() {
     localStorage.formularioPersona = JSON.stringify(formularioPersona);
 }
 
+//Cuando cargue la página cargamos los datos.
 cargar();

@@ -1,0 +1,101 @@
+
+.perfil-formulario{
+    display: grid;
+    max-width: 30em;
+    margin: 1em auto;
+    grid-template-columns: 45% 45%;
+    grid-gap: 1em 10%;
+}
+@media(max-width: 600px) {
+    .perfil-formulario {
+        grid-template-columns: 100%;
+        max-width: 22em;
+    }
+}
+
+.perfil-formulario__firstname{
+
+}
+.perfil-formulario__lastname{
+
+}
+.perfil-formulario__telephone{
+
+}
+.perfil-formulario__email{
+
+}
+.perfil-formulario__birthday{
+
+}
+.perfil-formulario__height{
+
+}
+.perfil-formulario__favcolor{
+
+}
+.perfil-formulario__favweb{
+
+}
+.perfil-formulario__buttons{
+    text-align: center; 
+}
+
+@media(min-width: 600px) {
+    .perfil-formulario__buttons {
+        grid-column: 1 / 3;
+    }
+}
+
+.perfil-formulario label{
+    display: block;
+    font-size: 0.77em;
+}
+.perfil-formulario input {
+    width: calc(100% - 0.8em);
+    padding: 0.3em;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: 0.1em solid rgb(197, 197, 197);
+}
+
+/* hack - añade el tipo de elemento para que sea más descriptivo e ignore la propiedad genérica*/
+input.perfil-formulario__button {
+    width: auto;
+    font-size: 0.9em;
+    padding: 0.3em 1em;
+}
+.perfil-formulario__button--save{
+    background: rgb(103, 103, 189);
+    border-color: rgb(103, 103, 189) !important;
+    color: white;
+}
+
+.perfil-formulario__button--cancel{
+    background: white;
+}
+
+/* Validación del formulario: */
+.perfil-formulario__firstname input:valid,
+.perfil-formulario__lastname  input:valid,
+.perfil-formulario__telephone input:valid,
+.perfil-formulario__email     input:valid,
+.perfil-formulario__birthday  input:valid,
+.perfil-formulario__height    input:valid,
+.perfil-formulario__favcolor  input:valid,
+.perfil-formulario__favweb    input:valid{
+    border-color: rgb(99, 156, 24);
+    background: #a1e785 url("../images/form_validation/checked.svg") no-repeat center right 0.4em / 1em;
+}   
+
+.perfil-formulario__firstname input:invalid,
+.perfil-formulario__lastname  input:invalid,
+.perfil-formulario__telephone input:invalid,
+.perfil-formulario__email     input:invalid,
+.perfil-formulario__birthday  input:invalid,
+.perfil-formulario__height    input:invalid,
+.perfil-formulario__favcolor  input:invalid,
+.perfil-formulario__favweb    input:invalid{
+    border-color: rgb(255, 181, 181);
+    background: #ffe6e6 url("../images/form_validation/error.svg") no-repeat center right 0.4em / 1em;
+}   

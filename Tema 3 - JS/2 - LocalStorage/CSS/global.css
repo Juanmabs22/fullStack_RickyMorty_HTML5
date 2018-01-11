@@ -1,0 +1,172 @@
+/* Utilizar éste CSS para parámetros globales de toda la aplicación */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(246, 241, 241);
+    height: 100%;
+}
+
+/* HEADER - CABECERA */
+/* .header{} */
+.header{
+    background: white;
+}
+.header-superior{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header-superior__image{
+    height: 2em;
+    margin: 0.3em 0;
+}
+.header-superior__title{
+    display: none;
+}
+@media(max-width: 670px) {
+    .header-superior__link{
+        display: block;
+        text-align: center;
+        line-height: 0;
+    }
+    .header-superior__image {
+        margin: 0;
+        width: auto;
+        height: auto;
+        max-height: 103px;
+        max-width: 90%;
+    }
+}
+
+.header-nav {
+    /* background: rgb(238, 238, 238); */
+    border-style: solid none;
+    border-color: #cecece;
+}
+.header-nav__center { 
+    max-width: 1000px;
+    margin: 0 auto;
+    border-style: none solid;
+    border-color: #cecece;
+}
+.header-nav__link {
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+    border-right: solid #cecece;
+}
+
+@media(max-width: 670px){
+    .header-nav__link {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+        border-top: solid #cecece;
+        border-left: solid #cecece;
+    }
+}
+
+/* Fondo grisaceo para el resto de la página  */
+main, footer {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Zona del contenio - MAIN */
+.main{
+    min-height: calc(100% - 11em);
+}
+.main-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.main-wrapper__titulo{
+    font-size: 0.6em;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 3em;
+}
+.main-wrapper__titulo::after{
+    content: '_';
+    font-size: 5em;
+    color: rgb(179, 179, 179);
+    transform: scaleX(1.5);
+
+    position: absolute;
+    bottom: -0.5em;
+    left: 0.1em;
+}
+.main-wrapper__contenido{
+    background: white;  
+    padding: 0.5em;
+    border: 0.1em solid rgb(219, 219, 219);
+}
+
+/* Pié de página - FOOTER */
+.footer{ /* Hack para poner al fondo de la pagina el pie */
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 1.3em;
+}
+.footer-nav{
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 0.1em solid grey;
+}
+.footer-nav__link {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    display: inline-block;
+}
+@media(max-width: 670px) {
+    .footer-nav{
+        text-align: center;
+    }
+    .footer-nav__link {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media(max-width: 370px) {
+    .footer-nav__link {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+        border-top: solid #cecece;
+    }
+}
+
+
+/* Conexión */
+.connection-status{
+    position: relative;
+    float: right;
+}
+.connection-status__text{
+    font-size: 0.7em;
+    padding: 1em 0;
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+.connection-status__circle,
+.connection-status__circle--disconnected{
+    width: 2.4em;
+    height: 2.4em;
+    float: left;
+}
+
+.connection-status__circle{
+    background: radial-gradient(circle, rgb(1, 221, 1), rgb(3, 211, 3), transparent, transparent, transparent, transparent);
+}
+.connection-status__circle--disconnected{
+    background: radial-gradient(circle, rgb(221, 1, 1), rgb(211, 3, 3), transparent, transparent, transparent, transparent);
+}

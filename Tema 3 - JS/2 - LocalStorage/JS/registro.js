@@ -1,8 +1,7 @@
 
 
 if (window.localStorage === undefined) {
-    console.log("Su navegador no permite localStorage");
-    return;
+    alert("Su navegador no permite localStorage, busque otro");
 }
 
 
@@ -25,9 +24,10 @@ function guardar() {
 }
 
 function cargar() {
-    let formularioPersona = JSON.parse(localStorage.formularioPersona);
+    let formularioPersona = JSON.parse(localStorage.formularioPersona || null);
     if(!formularioPersona){
         console.log("No hay datos!");
+        return;
     }
 
     ids.forEach((v, i, a) => {
@@ -35,3 +35,5 @@ function cargar() {
     });
     localStorage.formularioPersona = JSON.stringify(formularioPersona);
 }
+
+cargar();

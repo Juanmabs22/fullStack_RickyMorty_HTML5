@@ -51,7 +51,8 @@
     display: block;
     font-size: 0.77em;
 }
-.perfil-formulario input {
+.perfil-formulario input,
+.perfil-formulario__button {
     width: calc(100% - 0.8em);
     padding: 0.3em;
     font-size: 1.2em;
@@ -60,7 +61,7 @@
 }
 
 /* hack - añade el tipo de elemento para que sea más descriptivo e ignore la propiedad genérica*/
-input.perfil-formulario__button {
+.perfil-formulario__button {
     width: auto;
     font-size: 0.9em;
     padding: 0.3em 1em;

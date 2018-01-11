@@ -143,3 +143,30 @@ main, footer {
         border-top: solid #cecece;
     }
 }
+
+
+/* Conexión */
+.connection-status{
+    position: relative;
+    float: right;
+}
+.connection-status__text{
+    font-size: 0.7em;
+    padding: 1em 0;
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+.connection-status__circle,
+.connection-status__circle--disconnected{
+    width: 2.4em;
+    height: 2.4em;
+    float: left;
+}
+
+.connection-status__circle{
+    background: radial-gradient(circle, rgb(1, 221, 1), rgb(3, 211, 3), transparent, transparent, transparent, transparent);
+}
+.connection-status__circle--disconnected{
+    background: radial-gradient(circle, rgb(221, 1, 1), rgb(211, 3, 3), transparent, transparent, transparent, transparent);
+}

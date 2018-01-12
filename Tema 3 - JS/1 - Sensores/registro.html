@@ -79,6 +79,8 @@
 						<label for="favweb">Web favorita</label>
 						<input type="url" id="favweb" name="favweb" value="" placeholder="" required pattern="https?://.+">
 					</div>
+					<div id="map" class="perfil-formulario__mapa">
+					</div>
 					<div class="perfil-formulario__buttons">
 						<input class="perfil-formulario__button perfil-formulario__button--save" type="submit" name="Save" value="Save">
 						<input class="perfil-formulario__button perfil-formulario__button--cancel" type="submit" name="Cancel" value="Cancel">
@@ -94,6 +96,8 @@
 			<a class="footer-nav__link" href="#" title="Contacto">Contacto</a>
 		</nav>
 	</footer>
-
+	<script src="./JS/registro.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqbuMrfOdwSHTT3UI01nHwiXQLUSswdsc&callback=initMap">
+	</script>
 </body>
 </html>

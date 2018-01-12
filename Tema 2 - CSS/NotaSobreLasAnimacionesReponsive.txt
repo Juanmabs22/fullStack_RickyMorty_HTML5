@@ -1,0 +1,9 @@
+Hola!
+Gracias por leerme
+
+Las animaciones que se ejecutan durante el cambio de un responsive exigen mucho tiempo que por desgracia no tenemos.
+
+Las animaciones al cambiar de diseño quedan muy bien, pero apenas se usan, consumen muchos recursos y hay que hacer un gran estudio para que todo se ajuste perfectamente en la mayoría de navegadores.
+
+Se puede mejorar el rendimiento con will-change, pero aún así será una amiación pesada.
+

@@ -60,19 +60,13 @@
 }
 
 .perfil-formulario__bloque:nth-child(odd) {
-    /* height: 0; */
     position: absolute;
     right: 0;
     width: 48%;
-    /* margin-top: 3.5em; */
-    /* display: none; */
 }
 
 .perfil-formulario__bloque:nth-child(even) {
-    /* height: 0; */
     width: 48%;
-    /* margin-bottom: 3.5em; */
-    /* display: none; */
 }
 
 @media (max-width: 600px){

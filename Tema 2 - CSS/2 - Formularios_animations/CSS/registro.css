@@ -1,11 +1,14 @@
 
 .perfil-formulario{
-    display: grid;
+    /* display: grid; */
     max-width: 30em;
     margin: 1em auto;
-    grid-template-columns: 15em 15em;
-    grid-gap: 1em 3em;
+    /* grid-template-columns: 15em 15em; */
+    /* grid-gap: 1em 3em; */
 }
+
+
+
 .perfil-formulario__firstname{
 
 }
@@ -45,6 +48,46 @@
     border-radius: 0.2em;
     border: 0.1em solid rgb(197, 197, 197);
 }
+
+.perfil-formulario{
+    position: relative;
+    transition: height 1s;
+}
+
+.perfil-formulario__bloque {
+    will-change: width, margin-top, margin-bottom;
+    transition: width 1s, margin-top 1s, margin-bottom 1s;
+}
+
+.perfil-formulario__bloque:nth-child(odd) {
+    /* height: 0; */
+    position: absolute;
+    right: 0;
+    width: 48%;
+    /* margin-top: 3.5em; */
+    /* display: none; */
+}
+
+.perfil-formulario__bloque:nth-child(even) {
+    /* height: 0; */
+    width: 48%;
+    /* margin-bottom: 3.5em; */
+    /* display: none; */
+}
+
+@media (max-width: 600px){
+    .perfil-formulario__bloque {
+        width: 100% !important;
+    }
+    .perfil-formulario__bloque:nth-child(odd) {
+        margin-top: 3.5em;
+    }
+
+    .perfil-formulario__bloque:nth-child(even) {
+        margin-bottom: 3.5em;
+    }
+}
+
 
 /* hack - añade el tipo de elemento para que sea más descriptivo e ignore la propiedad genérica*/
 input.perfil-formulario__button {

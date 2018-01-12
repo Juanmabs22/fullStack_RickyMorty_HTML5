@@ -33,7 +33,7 @@ function cargar() {
 //Cuando cargue la página cargamos los datos.
 cargar();
 
-
+// Alerta de altura incorrecta
 document.getElementById("height").oninvalid = function (e) {
     e.target.setCustomValidity("");
     if (!e.target.validity.valid) {
